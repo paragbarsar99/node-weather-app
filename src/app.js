@@ -9,6 +9,10 @@ const forcast = require('./weathercode')
 
 console.log('hello git')
 const app = express();
+
+//setting up env(enviroment value(this is a object))port value for heroku 
+const port = process.env.PORT || 3000
+
 //define path for express config
 const publicPathValue = path.join(__dirname,'../public')
 const viewPath = path.join(__dirname,'../templates/views')
@@ -89,8 +93,8 @@ app.get('*',(req,res) => {
 
 })
 //listning port of sever on browser
-app.listen(3000,() => {
+app.listen(port, () => {
 
-     console.log('listning at 3000');
+     console.log('listning at ' + port);
 });
 

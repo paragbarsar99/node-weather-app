@@ -14,7 +14,7 @@ console.log('commit')
       message_2.textContent = ''
          
  //use fetch api to get json data and show it in clint side ui       
-fetch('http://localhost:3000/weather?search='+ location).then((response) =>{
+fetch('/weather?search='+ location).then((response) =>{
       
     response.json().then((data) => {
       //handle error
