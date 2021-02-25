@@ -7,7 +7,7 @@ const forcast = require('./weathercode')
 
 //express is a function not confirm 
 
-
+console.log('hello git')
 const app = express();
 //define path for express config
 const publicPathValue = path.join(__dirname,'../public')
