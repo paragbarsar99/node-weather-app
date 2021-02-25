@@ -1,5 +1,5 @@
 //it is a client side js file
-
+console.log('commit')
  //dom manipulation get access to html 
  const weatherform = document.querySelector('form');
  const search = document.querySelector('input');
