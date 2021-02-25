@@ -11,7 +11,7 @@ function weathercode (langtitiude,longtitude,callback) {
          'temperature is '+
           body.current.temperature + ' But it feelslike '+ 
           body.current.feelslike + ' and here is weather discription '+ 
-          body.current.weather_descriptions[0]
+          body.current.weather_descriptions[0] + ' and humidity is '+ body.current.humidity
         )
       }catch(e){
          callback(error,undefined)
