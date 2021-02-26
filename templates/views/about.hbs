@@ -2,14 +2,29 @@
 <html>
 
 <head>
+        <title>About</title>
+        <link rel="icon" href="/img/weather.png">
      <link rel="stylesheet" href="./css/style.css">
      
 </head>
 
 <body>
-        {{>header}}
-        <img src = '../public/img/Annotation 2021-02-12 183402.png'>
-        {{>footer}}
+
+<div class="main-content">
+{{>header}} 
+<img class ="portrait" 
+src ='https://mars.nasa.gov/embed/25640/'>
+
+</div>
+
+
+{{!-- <iframe  id = "frame" src='https://mars.nasa.gov/embed/25640/' 
+width='100%' 
+height='400'  
+scrolling='no'
+frameborder='0'></iframe>
+ --}}
+{{>footer}}
     
       
 </body>
