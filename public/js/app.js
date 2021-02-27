@@ -7,6 +7,9 @@
  const message_2 = document.querySelector('#message-2')
 //adding event listener
  weatherform.addEventListener('submit',(e)=> {
+  
+   // debugger;
+
         e.preventDefault();
         const location =  search.value;
         console.log(typeof location)
@@ -16,7 +19,7 @@
  //use fetch api to get json data and show it in clint side ui
    try{ 
      if(location === "" )  return message_1.textContent= 'Trouble In Finding Your Loaction!!Please Try Another One' 
-   
+    
    
      fetch('/weather?search='+  location).then((response) =>{
     

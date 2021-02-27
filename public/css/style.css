@@ -38,6 +38,8 @@ header a {
 }
 
 .portrait {
+    margin-top: 10 auto;
+    height: 250px;
     width: 250px;
 }
 
